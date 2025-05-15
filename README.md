@@ -15,7 +15,7 @@
 ### 🧠 Sobre mim
 
 - 💻 **Full Stack focado em mobile**, usando **React Native e Laravel**
-- 🌐 Experiência com: TypeScript • Node.js • PHP • React • Laravel
+- 🌐 Experiência com: TypeScript • React • PHP • Laravel
 - ☁️ Certificado em **AWS Cloud Foundations**
 - 🎯 Apaixonado por resolver problemas com código limpo e performance
 
