@@ -26,7 +26,6 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=php,laravel,ts,react" />
   <img src="https://skillicons.dev/icons?i=react" width="50" title="React Native" />
-  <br/>
 </p>
 
 ---
