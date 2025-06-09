@@ -1,0 +1,33 @@
+# .github/workflows/generate-profile-3d.yml
+name: Generate 3D Contribution Graph
+
+on:
+  # Gera sempre que houver push no main ou todo dia às 6 da manhã
+  schedule:
+    - cron: '0 6 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate 3D Graph and Commit
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate 3D graph
+        uses: yassinebridi/profile-3d-contrib@main
+        with:
+          username: ${{ github.repository_owner }}
+          output_file: ./profile-3d-contrib/profile-night-green.svg
+          theme: "night-green" # outras opções: "default", "night-blue", "red", etc.
+
+      - name: Commit and push
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add .
+          git commit -m "update 3d profile graph" || echo "No changes to commit"
+          git push
