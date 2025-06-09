@@ -8,10 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # ADICIONE ESTA PARTE PARA DAR PERMISSÃO DE ESCRITA
+    permissions:
+      contents: write
+      
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v4 # Atualizado para a v4
-      - uses: yoshi389111/github-profile-3d-contrib@main # NOME CORRIGIDO
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: arthurharysson # NOME DA VARIÁVEL CORRIGIDO
+          USERNAME: arthurharysson
