@@ -17,7 +17,7 @@ jobs:
           github_username: arthurharysson # <-- TROQUE AQUI
           
 # Opcional: para gerar o gráfico com um ângulo diferente, como na imagem
-        use_perspective: true
-        perspective_angle: -60
-        perspective_x: 50
-        p erspective_y: 50
+#         use_perspective: true
+#         perspective_angle: -60
+#         perspective_x: 50
+#         perspective_y: 50
