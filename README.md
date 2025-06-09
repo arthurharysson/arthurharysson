@@ -1,3 +1,3 @@
-[![My Skills](https://skillicons.dev/icons?i=go,dart,flutter,ts,express,prisma,py,django,react,nextjs)](https://www.linkedin.com/in/leonardo-freitas-070298110/)
+[![My Skills](https://skillicons.dev/icons?i=ts,react,nextjs,expo)](https://www.linkedin.com/in/arthurharysson)
 
 ![](./profile-3d-contrib/profile-night-green.svg)
