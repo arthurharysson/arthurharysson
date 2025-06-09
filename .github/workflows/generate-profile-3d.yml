@@ -2,7 +2,7 @@ name: Generate 3D Contribution Graph
 
 on:
   schedule:
-    - cron: '0 6 * * *' # executa diariamente às 3h da manhã (Brasília)
+    - cron: '0 6 * * *' # executa diariamente às 6h UTC
   workflow_dispatch: # permite execução manual
 
 jobs:
@@ -20,12 +20,12 @@ jobs:
         with:
           user: ${{ github.repository_owner }}
           output: ./profile-3d-contrib/profile-night-green.svg
-          theme: "green"
+          theme: "purple" # você pode trocar por: "red", "blue", "purple", "nord", etc.
 
-      - name: Commit and push
+      - name: Commit and Push
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          git add .
-          git commit -m "update 3D contribution graph" || echo "No changes to commit"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add ./profile-3d-contrib/profile-night-green.svg
+          git commit -m "Update 3D contribution graph" || echo "No changes"
           git push
