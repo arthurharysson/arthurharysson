@@ -13,7 +13,13 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@main # VOLTAMOS PARA @main
+
+      # ---- NOVO PASSO ADICIONADO AQUI ----
+      - name: Delete old SVG
+        run: rm -f profile-3d-contrib.svg
+      # ------------------------------------
+
+      - uses: yoshi389111/github-profile-3d-contrib@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: arthurharysson # <-- NOME DE USUÁRIO CORRIGIDO AQUI
+          USERNAME: ArthurHarysson
