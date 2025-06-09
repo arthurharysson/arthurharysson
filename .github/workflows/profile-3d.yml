@@ -16,4 +16,4 @@ jobs:
       - uses: yoshi389111/github-profile-3d-contrib@main # VOLTAMOS PARA @main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ArthurHarysson # <-- NOME DE USUÁRIO CORRIGIDO AQUI
+          USERNAME: arthurharysson # <-- NOME DE USUÁRIO CORRIGIDO AQUI
