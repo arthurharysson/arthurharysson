@@ -10,14 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v3
-      - uses: yoshi38911/github-profile-3d-contrib@0.7.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_username: arthurharysson # <-- TROQUE AQUI
-          
-# Opcional: para gerar o gráfico com um ângulo diferente, como na imagem
-#         use_perspective: true
-#         perspective_angle: -60
-#         perspective_x: 50
-#         perspective_y: 50
+      - uses: actions/checkout@v4 # Atualizado para a v4
+      - uses: yoshi389111/github-profile-3d-contrib@main # NOME CORRIGIDO
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: arthurharysson # NOME DA VARIÁVEL CORRIGIDO
